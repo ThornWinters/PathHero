@@ -182,7 +182,7 @@ var Status = React.createClass({
   componentWillMount: function() {
     gMap.getDistanceByLocation(function (value) {
       var playerAtLocation = false;
-      if(value < 0.26){
+      if(value < 26){
         playerAtLocation = true;
       }
       this.setState({distanceToNextPin:value,playerAtLocation:playerAtLocation});
@@ -362,13 +362,4 @@ var routes = (
 Router.run(routes, function (Handler) {
   React.render(<Handler/>, document.getElementById('player-app'));
 });
-
-
-
-
-
-
-
-
-
 
