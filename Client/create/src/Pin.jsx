@@ -40,7 +40,7 @@ module.exports = React.createClass({
     var pinHeader;
     if (this.props.editMode) {
       pinHeader = (<span>
-                     <img src={mapImg[this.props.pinIndex]} width="42" />
+                     <img src={mapImg[this.props.pinIndex]} width="42" /> 
                      <input type="text" ref="locationName" onChange={this.onLocationChange}
                             value={this.props.pin.answer} />
                       <span>
